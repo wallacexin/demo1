@@ -10,6 +10,7 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String index(ModelMap map) {
+        map.addAttribute("title","mytitle");
         map.addAttribute("message","welcome to use idea.");
         return "hello";
     }
